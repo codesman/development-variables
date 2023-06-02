@@ -15,6 +15,7 @@ concurrency:
 env:
   environment: development
   NODE_ENV: development
+  foo: bar
   node-version: ${{ vars.NODE_VERSION }}
 
 jobs:
