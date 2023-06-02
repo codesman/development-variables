@@ -27,4 +27,3 @@ jobs:
         with:
           node-version: ${{ vars.NODE_VERSION }}
           cache: 'pnpm'
-      - run: pnpm i --stream
