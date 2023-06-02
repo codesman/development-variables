@@ -13,10 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  environment: development
-  NODE_ENV: development
-  foo: bar
-  node-version: ${{ vars.NODE_VERSION }}
+  node: ${{ vars.DEVELOPMENT_NODE_VERSION }}
 
 jobs:
 
