@@ -20,11 +20,7 @@ jobs:
   one:
     runs-on: ubuntu-latest
     steps:
-      - name: Dump GitHub vars
+      - name: Dump GitHub env
         env:
-          GITHUB_CONTEXT:  ${{github.env}}
-        run: echo "$GITHUB_VARS"
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
+          GITHUB_CONTEXT:  $GITHUB_ENV
         run: echo "$GITHUB_CONTEXT"
