@@ -13,11 +13,14 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  environment: development
   NODE_ENV: development
   node-version: ${{ vars.NODE_VERSION }}
 
 jobs:
+
   one:
+    environment: development
     runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub env
