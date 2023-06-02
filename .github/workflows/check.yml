@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: Dump GitHub vars
         env:
-          GITHUB_CONTEXT: ${{ $GITHUB_ENV }}
+          GITHUB_CONTEXT:  ${{github.env}}
         run: echo "$GITHUB_VARS"
       - name: Dump GitHub context
         env:
